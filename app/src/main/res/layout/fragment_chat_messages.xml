@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/black_stroke_color"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/mulish_regular"
+        android:hint="Type your message here..."
+        android:textColor="#868B90"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/send_btn"
+        app:layout_constraintTop_toBottomOf="@id/chat_recycler_view"
+        app:layout_constraintStart_toStartOf="@id/chat_recycler_view"/>
+
+    <ImageView
+        app:layout_constraintStart_toEndOf="@id/message"
+        android:id="@+id/send_btn"
+        android:contentDescription="@null"
+        android:src="@drawable/send_chat_btn"
+        android:background="@drawable/ic_orange_gradient"
+        android:layout_width="@dimen/_48sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/message"
+        app:layout_constraintBottom_toBottomOf="@id/message"
+        app:layout_constraintEnd_toEndOf="@id/chat_recycler_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

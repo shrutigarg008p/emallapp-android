@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="5dp" android:height="5dp"
+
+        android:drawable="@drawable/radio_check" android:state_checked="true" android:state_window_focused="false"/>
+    <item
+        android:width="5dp" android:height="5dp" android:drawable="@drawable/radio_uncheck" android:state_checked="false" android:state_window_focused="false"/>
+    <item
+        android:width="5dp" android:height="5dp" android:drawable="@drawable/radio_uncheck" android:state_checked="false"/>
+    <item
+        android:width="5dp" android:height="5dp" android:drawable="@drawable/radio_check" android:state_checked="true"/>
+</selector>

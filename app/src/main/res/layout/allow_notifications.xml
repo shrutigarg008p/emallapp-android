@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notification_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_20dp"
+    android:layout_marginTop="@dimen/margin_20dp"
+    android:layout_marginEnd="@dimen/margin_20dp"
+    app:cardCornerRadius="@dimen/margin_10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCF2F2F2"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:fontFamily="@font/mulish_regular"
+            android:gravity="center"
+            android:text="@string/notification_heading"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:fontFamily="@font/mulish_regular"
+            android:gravity="center"
+            android:text="@string/notification_body"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/allow_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_50dp"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="@dimen/margin_15dp"
+            android:text="@string/allow"
+            android:textAlignment="center"
+            android:textColor="#007AFF"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/divider7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="#5C3C3C43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/body" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="@dimen/margin_1dp"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toStartOf="@+id/dont_allow_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/allow_btn"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/dont_allow_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_50dp"
+            android:fontFamily="@font/mulish_regular"
+            android:padding="@dimen/margin_15dp"
+            android:text="@string/don_t_allow"
+            android:textAlignment="center"
+            android:textColor="#007AFF"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/divider7"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

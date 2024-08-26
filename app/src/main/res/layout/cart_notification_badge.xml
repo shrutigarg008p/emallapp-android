@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end">
+
+    <TextView
+        android:id="@+id/cart_counter"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:background="@drawable/ic_orange_circle"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"
+        android:visibility="gone" />
+</FrameLayout>

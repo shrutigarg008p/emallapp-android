@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/background_color"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_3sdp" />
+
+            <LinearLayout
+                android:id="@+id/slider_dots"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="#0D767680"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageSlider">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/material_toggle_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/new_click"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/new_click"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/new1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/used_click"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/used"
+                    android:textAllCaps="false"
+                    android:textColor="@color/used_btn_default_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/top_offers_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/top_offers"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/top_offers_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/view_all"
+            android:textColor="@color/selected_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/top_offers_heading"
+            app:layout_constraintEnd_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/top_offers_heading" />
+
+        <View
+            android:id="@+id/top_offers_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="@id/top_offers_view_all"
+            app:layout_constraintStart_toStartOf="@id/top_offers_heading"
+            app:layout_constraintTop_toBottomOf="@id/top_offers_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/top_offers_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_offers_divider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/best_deals_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/best_deals"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/top_offers_recycler_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/best_deals_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/view_all"
+            android:textColor="@color/selected_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/best_deals_heading"
+            app:layout_constraintEnd_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/best_deals_heading" />
+
+        <View
+            android:id="@+id/best_deals_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="@id/best_deals_view_all"
+            app:layout_constraintStart_toStartOf="@id/best_deals_heading"
+            app:layout_constraintTop_toBottomOf="@id/best_deals_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/best_deals_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/best_deals_divider" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_best_deals_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="@id/best_deals_view_all"
+            app:layout_constraintStart_toStartOf="@id/best_deals_heading"
+            app:layout_constraintTop_toBottomOf="@id/best_deals_recycler_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/top_ten_selected_products_of_the_week_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/top_10_selected_product_of_the_week"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/after_best_deals_banner" />
+
+        <View
+            android:id="@+id/top_ten_selected_products_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="@id/best_deals_view_all"
+            app:layout_constraintStart_toStartOf="@id/best_deals_heading"
+            app:layout_constraintTop_toBottomOf="@id/top_ten_selected_products_of_the_week_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/top_ten_selected_products_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_ten_selected_products_divider" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/top_ten_selected_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:visibility="gone"
+            app:iss_period="7500"
+            app:iss_selected_dot="@drawable/default_selected_dot"
+            app:iss_text_align="center"
+            app:iss_unselected_dot="@drawable/unselected_dot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_ten_selected_products_recycler_view" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_selected_products_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="@id/best_deals_view_all"
+            app:layout_constraintStart_toStartOf="@id/best_deals_heading"
+            app:layout_constraintTop_toBottomOf="@id/top_ten_selected_dots" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_selected_products_banner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="@id/best_deals_view_all"
+            app:layout_constraintStart_toStartOf="@id/best_deals_heading"
+            app:layout_constraintTop_toBottomOf="@id/after_selected_products_banner" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/deals_of_the_month_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/after_selected_products_banner_2">
+
+            <TextView
+                android:id="@+id/deal_of_the_month_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/mulish_regular"
+                android:padding="@dimen/margin_10dp"
+                android:text="@string/deal_of_the_month"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/days_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/hours_layout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deal_of_the_month_heading">
+
+                <TextView
+                    android:id="@+id/days_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-24"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/days"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/hours_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/minutes_layout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/days_layout"
+                app:layout_constraintTop_toTopOf="@+id/days_layout">
+
+                <TextView
+                    android:id="@+id/hours_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-17"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/hours"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/minutes_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/seconds_layout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/hours_layout"
+                app:layout_constraintTop_toTopOf="@+id/hours_layout">
+
+                <TextView
+                    android:id="@+id/minutes_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-19"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/mins"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/seconds_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/minutes_layout"
+                app:layout_constraintTop_toTopOf="@+id/minutes_layout">
+
+                <TextView
+                    android:id="@+id/seconds_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-1"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/sec"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/deal_of_the_month_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_slider"
+                app:layout_constraintEnd_toEndOf="@id/seconds_layout"
+                app:layout_constraintStart_toStartOf="@id/days_layout"
+                app:layout_constraintTop_toBottomOf="@id/days_layout" />
+
+            <TextView
+                android:id="@+id/deal_of_the_month_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="Xbox One Cyberpunk Bundle"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/deal_of_the_month_image"
+                app:layout_constraintStart_toStartOf="@+id/deal_of_the_month_image"
+                app:layout_constraintTop_toBottomOf="@+id/deal_of_the_month_image" />
+
+            <TextView
+                android:id="@+id/deal_of_the_month_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="SAR 288.4"
+                android:textColor="@color/selected_color"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/deal_of_the_month_text_view"
+                app:layout_constraintStart_toStartOf="@+id/deal_of_the_month_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/deal_of_the_month_text_view" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shop_now_btn"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/ic_orange_gradient"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/shop_now"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/deal_of_the_month_item_price"
+                app:layout_constraintStart_toStartOf="@+id/deal_of_the_month_item_price"
+                app:layout_constraintTop_toBottomOf="@+id/deal_of_the_month_item_price" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_deal_of_the_month_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="@id/best_deals_heading"
+            app:layout_constraintStart_toStartOf="@id/best_deals_view_all"
+            app:layout_constraintTop_toBottomOf="@id/deals_of_the_month_banner" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/popular_search_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/popular_search"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/after_deal_of_the_month_banner" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/popular_search_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/view_all"
+            android:textColor="@color/selected_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/popular_search_heading"
+            app:layout_constraintEnd_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/popular_search_heading" />
+
+        <View
+            android:id="@+id/popular_search_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="@id/popular_search_view_all"
+            app:layout_constraintStart_toStartOf="@id/popular_search_heading"
+            app:layout_constraintTop_toBottomOf="@id/popular_search_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popular_search_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popular_search_divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popular_search_recycler_view_vertically"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popular_search_recycler_view" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_popular_search_recycler_view_vertically_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popular_search_recycler_view_vertically" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/flash_sale_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/after_popular_search_recycler_view_vertically_banner">
+
+            <TextView
+                android:id="@+id/flash_sale_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:fontFamily="@font/mulish_bold"
+                android:text="@string/flash_sale"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/flash_sale_sub_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text=""
+                android:textColor="@color/unselected_color"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/flash_sale_heading"
+                app:layout_constraintStart_toStartOf="@+id/flash_sale_heading"
+                app:layout_constraintTop_toBottomOf="@id/flash_sale_heading" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/flash_sale_days_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/flash_sale_hours_layout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flash_sale_sub_heading">
+
+                <TextView
+                    android:id="@+id/_flash_sale_days_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-24"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="DAYS"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/flash_sale_hours_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/flash_sale_minutes_layout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/flash_sale_days_layout"
+                app:layout_constraintTop_toTopOf="@+id/flash_sale_days_layout">
+
+                <TextView
+                    android:id="@+id/flash_sale_hours_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-17"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="@string/hours"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/flash_sale_minutes_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/flash_sale_seconds_layout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/flash_sale_hours_layout"
+                app:layout_constraintTop_toTopOf="@+id/flash_sale_hours_layout">
+
+                <TextView
+                    android:id="@+id/flash_sale_minutes_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-19"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="MINS"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/flash_sale_seconds_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/flash_sale_minutes_layout"
+                app:layout_constraintTop_toTopOf="@+id/flash_sale_minutes_layout">
+
+                <TextView
+                    android:id="@+id/flash_sale_seconds_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="-1"
+                    android:textColor="@color/selected_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="SEC"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/flash_sale_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flash_sale_days_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_flash_sale_banner_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/flash_sale_banner" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_flash_sale_banner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/after_flash_sale_banner_1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hot_sales_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/hot_sale"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/after_flash_sale_banner_2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hot_sales_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/view_all"
+            android:textColor="@color/selected_color"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@id/hot_sales_heading"
+            app:layout_constraintEnd_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/hot_sales_heading" />
+
+        <View
+            android:id="@+id/hot_sales_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="@id/hot_sales_view_all"
+            app:layout_constraintStart_toStartOf="@id/hot_sales_heading"
+            app:layout_constraintTop_toBottomOf="@id/hot_sales_heading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hot_sales_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hot_sales_divider" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_hot_sales_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hot_sales_recycler_view" />
+
+        <FrameLayout
+            android:id="@+id/after_hot_sales_banner_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/after_hot_sales_banner">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/hot_sales_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_3sdp" />
+
+            <LinearLayout
+                android:id="@+id/hot_sales_slider_dots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/after_hot_sales_banner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/after_hot_sales_banner_slider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/most_bottom_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/after_hot_sales_banner_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

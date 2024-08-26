@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".activity.NewUsedDevicesActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/device_cat_image" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_emall_logo" />
+
+        <com.emall.net.customview.MulishRegular
+            android:id="@+id/textView6"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_32dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/margin_32dp"
+            android:gravity="center"
+            android:text="@string/please_select_a_category"
+            android:textAlignment="center"
+            android:textColor="#6A6A6A"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_grey_horizantal_line" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/solid_white_round_btn_drawable"
+            android:contentDescription="@null">
+
+            <com.emall.net.customview.MulishRegular
+                android:id="@+id/new_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_orange_stroke_color"
+                android:gravity="center"
+                android:text="@string/new_devices"
+                android:textColor="@color/selected_color" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/solid_white_round_btn_drawable"
+            android:contentDescription="@null">
+
+            <com.emall.net.customview.MulishRegular
+                android:id="@+id/old_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_orange_stroke_color"
+                android:gravity="center"
+                android:text="@string/used_devices"
+                android:textColor="@color/selected_color" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_blsck_indicator" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

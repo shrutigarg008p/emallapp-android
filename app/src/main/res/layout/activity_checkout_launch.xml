@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@drawable/toolbar_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:contentDescription="@null"
+                android:padding="@dimen/margin_10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/checkout_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/mulish_bold"
+                android:padding="@dimen/margin_10dp"
+                android:text="@string/checkout"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                app:searchIcon="@drawable/ic_search" />
+        </RelativeLayout>
+
+<!--
+        <com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_toolbar"
+            android:padding="@dimen/margin_16dp"
+            android:visibility="gone"
+            app:sv_animationType="Line"
+            app:sv_doneCircleColor="@color/unselected_color"
+            app:sv_doneCircleRadius="@dimen/margin_5dp"
+            app:sv_doneStepLineColor="@color/unselected_color"
+            app:sv_doneStepMarkColor="@color/black"
+            app:sv_nextStepLineColor="@color/unselected_color"
+            app:sv_nextTextColor="@color/unselected_color"
+            app:sv_selectedCircleColor="@color/selected_color"
+            app:sv_selectedCircleRadius="@dimen/margin_10dp"
+            app:sv_selectedTextColor="@color/selected_color"
+            app:sv_stepLineWidth="@dimen/margin_1dp"
+            app:sv_stepNumberTextSize="@dimen/font_size_12sp"
+            app:sv_stepPadding="@dimen/margin_4dp"
+            app:sv_stepViewStyle="@style/StepView"
+            app:sv_stepsNumber="3" />
+-->
+
+        <!--<com.badoualy.stepperindicator.StepperIndicator
+            android:id="@+id/steps_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_toolbar"
+            app:stpi_circleColor="@color/selected_color"
+            app:stpi_circleRadius="@dimen/margin_10dp"
+            app:stpi_indicatorColor="@color/selected_color"
+            app:stpi_labels="@array/stepLabels"
+            app:stpi_lineColor="@color/unselected_color"
+            app:stpi_lineDoneColor="@color/unselected_color"
+            app:stpi_lineMargin="@dimen/margin_5dp"
+            app:stpi_showDoneIcon="true"
+            app:stpi_stepCount="3" />
+-->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_10dp" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

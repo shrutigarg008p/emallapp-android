@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.emall.net">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+           The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+           Google Maps Android API v2, but you must specify either coarse or fine
+           location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <application
+        android:name=".EmallApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup"
+        android:theme="@style/Theme.Emall"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.dashboard.BuyerActivity"
+            android:theme="@style/Theme.Emall.NoActionBar"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activity.dashboard.SellerActivity"
+            android:theme="@style/Theme.Fab_Bottom_app_bar"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar" />
+        <activity
+            android:name=".activity.NewUsedDevicesActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar" />
+        <activity
+            android:name=".activity.IntroSliderActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar" />
+        <activity
+            android:name=".activity.loginSignUp.changePassword.CreateNewPasswordActivity"
+            android:label="@string/title_activity_fill_new_password"
+            android:theme="@style/Theme.Emall.NoActionBar" />
+        <activity
+            android:name=".activity.loginSignUp.LoginActivity"
+            android:theme="@style/Theme.Emall.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <!--<activity
+            android:name=".activity.loginSignUp.LoginOTPVerifyActivity"
+            android:label="@string/title_activity_fill_new_password"
+            android:theme="@style/Theme.Emall.NoActionBar" />-->
+        <activity
+            android:name=".activity.loginSignUp.otp.LoginViaOTP"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.loginSignUp.otp.VerifyOTP"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.loginSignUp.changePassword.ResetPassword"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.loginSignUp.otp.LoginViaOTPVerify"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.loginSignUp.changePassword.VerifyOTPForChangedPassword"
+            android:theme="@style/Theme.Emall.NoActionBar" />
+        <activity
+            android:name=".activity.loginSignUp.signup.SignUpActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Emall.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_10dp">
+
+        <TextView
+            android:id="@+id/serial_number_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_18dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/individual_bill_of_loading"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginStart="@dimen/margin_18dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serial_number_heading" />
+
+        <ImageView
+            android:id="@+id/qr_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_300dp"
+            android:layout_marginStart="@dimen/margin_18dp"
+            android:layout_marginTop="@dimen/margin_6dp"
+            android:layout_marginEnd="@dimen/margin_18dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:background="@drawable/transparent_white_stroke_background_2"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@null"
+            android:elevation="@dimen/margin_10dp"
+            android:padding="@dimen/margin_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sample_qr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/print_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/margin_50dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:background="@drawable/ic_charcoal_black_gradient_btn_color"
+            android:fontFamily="@font/mulish_regular"
+            android:gravity="center"
+            android:text="@string/print"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qr_image_view" />
+
+        <TextView
+            android:id="@+id/download_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:background="@drawable/ic_charcoal_black_gradient_btn_color"
+            android:fontFamily="@font/mulish_regular"
+            android:gravity="center"
+            android:text="@string/download"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/print_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

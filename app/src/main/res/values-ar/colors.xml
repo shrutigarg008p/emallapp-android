@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vibrant_green_pressed">#00A300</color>
+    <color name="place_address_color">#9BABBB</color>
+    <color name="dark_grey">#666666</color>
+    <color name="pending">#EBA41D</color>
+    <color name="success">#34C47C</color>
+    <color name="cancelled">#FF2650</color>
+    <color name="off_white">#FAF9F6</color>
+    <color name="light_grey_color">#F5F5F5</color>
+</resources>

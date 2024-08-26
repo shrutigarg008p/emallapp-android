@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/underline"
+    android:drawableEnd="@drawable/radio"
+    android:ellipsize="marquee"
+    android:gravity="center_vertical"
+    android:layoutDirection="ltr"
+    android:padding="@dimen/_12sdp"
+    android:singleLine="true"
+    android:text="dssdasdsadsadsadasdasd"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_11sdp" />
+
+

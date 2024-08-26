@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:elevation="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_10dp"
+            app:cardCornerRadius="@dimen/margin_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/cart_sample_image" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text="@string/macbook_pro_16"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="@+id/image" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="SAR 1397"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/image"
+                    app:layout_constraintStart_toEndOf="@+id/image" />
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:fontFamily="@font/mulish_regular"
+                    android:text="Space Grey"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_oval"
+                    app:layout_constraintStart_toEndOf="@+id/price"
+                    app:layout_constraintTop_toTopOf="@+id/price" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:background="@drawable/transparent_white_stroke_background"
+                    android:drawablePadding="@dimen/margin_10dp"
+                    android:fontFamily="@font/mulish_bold"
+                    android:padding="@dimen/margin_5dp"
+                    android:text="01"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_plus"
+                    app:drawableStartCompat="@drawable/ic_minus"
+                    app:layout_constraintBottom_toBottomOf="@+id/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/color"
+                    app:layout_constraintTop_toTopOf="@+id/price" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/shipping_address_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/shipping_address"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view" />
+
+        <TextView
+            android:id="@+id/shipping_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/mulish_regular"
+            android:text="@string/temp_address"
+            android:textColor="#363636"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shipping_address_heading" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_32dp"
+            android:background="@drawable/transparent_white_stroke_background"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_10dp"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shipping_address">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/sub_total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="start"
+                    android:text="@string/sub_total"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sub_total_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="center"
+                    android:text="SAR 880"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/shipping_fee_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_10dp"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sub_total_layout">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="start"
+                    android:text="@string/shipping_fee"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shipping_fee_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="center"
+                    android:text="SAR 9"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/promo_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_10dp"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shipping_fee_layout">
+
+                <TextView
+                    android:id="@+id/promo_code_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="start"
+                    android:text="@string/promo_code"
+                    android:textAlignment="textStart"
+                    android:textColor="#00A66C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/colon3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="#00A66C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/promo_code_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="center"
+                    android:text="- SAR 9"
+                    android:textColor="#00A66C"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/estimating_tax_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_10dp"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/promo_code_layout">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="start"
+                    android:text="@string/estimating_tax"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/estimating_tax_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="center"
+                    android:text="SAR 65"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_2dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:backgroundTint="@color/unselected_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/estimating_tax_layout" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_10dp"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:weightSum="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="start"
+                    android:text="@string/total"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/selected_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="@color/selected_color"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_bold"
+                    android:gravity="center"
+                    android:text="SAR 880"
+                    android:textColor="@color/selected_color"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/place_order_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:background="@drawable/ic_charcoal_black_gradient_btn_color"
+            android:gravity="center"
+            android:text="@string/place_order"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

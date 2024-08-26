@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_300dp"
+            android:background="@drawable/map"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:fontFamily="@font/mulish_regular"
+            android:text="@string/login_to_use_your_saved_addresses"
+            android:textAlignment="center"
+            android:textColor="@color/unselected_color"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:backgroundTint="@color/selected_color"
+            android:fontFamily="@font/mulish_bold"
+            android:text="@string/login"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/textView35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/location_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:paddingBottom="@dimen/margin_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_btn">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/complete_your_address"
+                android:textColor="@color/unselected_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:fontFamily="@font/mulish_bold"
+                android:text="@string/le_grand_chateau_jumeirah_village_cir"
+                android:textAlignment="textStart"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintStart_toStartOf="@+id/textView28"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:backgroundTint="@android:color/white"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/change"
+                android:textColor="#0C2136"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView38"
+                app:strokeWidth="@dimen/margin_2dp" />
+
+            <EditText
+                android:id="@+id/address1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:ems="10"
+                android:fontFamily="@font/mulish_bold"
+                android:hint="@string/building_no"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="@color/unselected_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+            <EditText
+                android:id="@+id/address2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:ems="10"
+                android:fontFamily="@font/mulish_bold"
+                android:hint="@string/flat_no"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="@color/unselected_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/address1"
+                app:layout_constraintEnd_toEndOf="@+id/button3"
+                app:layout_constraintStart_toEndOf="@+id/address1"
+                app:layout_constraintTop_toTopOf="@+id/address1" />
+
+            <TextView
+                android:id="@+id/address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/e_g_b1_b2"
+                android:textColor="#AEB6BF"
+                android:textSize="@dimen/font_size_9sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/address1" />
+
+            <TextView
+                android:id="@+id/address2_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/e_g_234"
+                android:textColor="#AEB6BF"
+                android:textSize="@dimen/font_size_9sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/address2"
+                app:layout_constraintTop_toBottomOf="@+id/address2" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:fontFamily="@font/mulish_regular"
+                android:text="@string/tag_location"
+                android:textColor="#0C2136"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/address_hint" />
+
+            <TextView
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F4E6DB"
+                android:fontFamily="@font/mulish_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/margin_6dp"
+                android:paddingEnd="@dimen/margin_6dp"
+                android:paddingBottom="@dimen/margin_2dp"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/selected_color"
+                android:textSize="@dimen/font_size_10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView42"
+                app:layout_constraintEnd_toStartOf="@+id/office_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView42"
+                app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/office_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F4E6DB"
+                android:fontFamily="@font/mulish_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/margin_6dp"
+                android:paddingEnd="@dimen/margin_6dp"
+                android:paddingBottom="@dimen/margin_2dp"
+                android:text="@string/office"
+                android:textAlignment="center"
+                android:textColor="@color/selected_color"
+                android:textSize="@dimen/font_size_10sp"
+                app:layout_constraintEnd_toStartOf="@+id/hotel_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/home_btn"
+                app:layout_constraintTop_toTopOf="@id/home_btn" />
+
+            <TextView
+                android:id="@+id/hotel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F4E6DB"
+                android:fontFamily="@font/mulish_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/margin_6dp"
+                android:paddingEnd="@dimen/margin_6dp"
+                android:paddingBottom="@dimen/margin_2dp"
+                android:text="@string/hotel"
+                android:textAlignment="center"
+                android:textColor="@color/selected_color"
+                android:textSize="@dimen/font_size_10sp"
+                app:layout_constraintEnd_toStartOf="@+id/other_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/office_btn"
+                app:layout_constraintTop_toTopOf="@+id/office_btn" />
+
+            <TextView
+                android:id="@+id/other_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2dp"
+                android:background="#F4E6DB"
+                android:fontFamily="@font/mulish_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/margin_6dp"
+                android:paddingEnd="@dimen/margin_6dp"
+                android:paddingBottom="@dimen/margin_2dp"
+                android:text="@string/other"
+                android:textAlignment="center"
+                android:textColor="@color/selected_color"
+                android:textSize="@dimen/font_size_10sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/hotel_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/hotel_btn" />
+
+            <TextView
+                android:id="@+id/confirm_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_32dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_32dp"
+                android:background="@drawable/ic_charcoal_black_gradient_btn_color"
+                android:gravity="center"
+                android:text="@string/confirm_location"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other_btn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

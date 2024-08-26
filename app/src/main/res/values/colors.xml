@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="maingrey">#8A8A8A</color>
+    <color name="light_grey_color">#F5F5F5</color>
+
+    <color name="selected_color">#E09B63</color>
+    <color name="light_gray">#E5E5E5</color>
+    <color name="unselected_color">#979797</color>
+    <color name="stroke_color">#DDDDDD</color>
+    <color name="radio_btn_color">#D2DEE7</color>
+    <color name="background_color">#F9F9F9</color>
+    <color name="stroke_color_dark">#99E5E5E5</color>
+    <color name="black_text">#1E1E1E</color>
+
+
+
+    <color name="detail_title">#200E32</color>
+
+
+    <color name = "et_box_color"><selector xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item android:color="@color/transparent"
+            android:state_pressed="true"
+            android:state_focused="true"
+            android:state_selected="true"
+            android:state_checkable="true"
+            android:state_checked="true"
+            android:state_enabled="true"
+            android:state_window_focused="true"/>
+    </selector>
+    </color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen">#36030303</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen">@color/selected_color</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+
+    <color name="unselected_btn_color">#DADADA</color>
+    <color name="grey_colour">#E6D3D3D3</color>
+    <color name="detail_data">#353636</color>
+    <color name="vibrant_green_pressed">#00A300</color>
+    <color name="red">#ff0000</color>
+    <color name="place_address_color">#9BABBB</color>
+    <color name="dark_grey">#666666</color>
+    <color name="pending">#EBA41D</color>
+    <color name="success">#34C47C</color>
+    <color name="cancelled">#FF2650</color>
+    <color name="used_btn_default_color">#8D8D8D</color>
+    <color name="off_white">#FAF9F6</color>
+</resources>
+

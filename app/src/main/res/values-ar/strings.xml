@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Emall</string>
+    <string name="slider_heading">أفضل مجموعة تخفيضات للصيف</string>
+    <string name="please_select_a_category">يرجي اختيار القسم الذي ترغب في التسوق منه</string>
+    <string name="welcome_to_emall">مرحبا بكم في Emall</string>
+    <string name="select_category_heading">برجاء اختيار الفئة التي تريد التسوق منها</string>
+    <string name="new_devices">أجهزة جديدة</string>
+    <string name="used_devices">أجهزة مستخدمة</string>
+    <string name="auction_id_">رقم المزاد:</string>
+
+    <!-- BOTTOM SHEET DIALOGS AND POPUP -->
+    <string name="notification_heading">"Emall" ترغب في إرسال إشعارات إليك</string>
+    <string name="notification_body">قد تشمل الإخطارات التنبيهات والأصوات وشارات الرموز. يمكن تهيئتها لاحقًا في الإعدادات.</string>
+
+    <string name="allow">يسمح</string>
+    <string name="don_t_allow">لا تسمح</string>
+
+    <string name="select_the_country_of_your_nationality">ﺮﺟﺎء اﺧﺘﻴﺎر اﻟﺒﻠﺪ</string>
+    <string name="uae">الامارات</string>
+    <string name="saudi_arabia">المملكة العربية السعودية</string>
+    <string name="kuwait">الكويت</string>
+    <string name="select_your_preferred_language">رجاء اختيار اللغة المفضلة</string>
+    <string name="confirm">تأكيد</string>
+    <string name="english">English</string>
+    <string name="arab_language">عربي</string>
+
+    <!-- LOGIN SIGN UP -->
+    <string name="Welcome">مرحبا</string>
+    <string name="welcome_back">مرحبا بكم مرة أخرى</string>
+    <string name="WHYUS">لماذا نحن؟</string>
+    <string name="enterprise_evaluator_login">تسجيل الدخول بائع/مقيّم</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="login_via_otp">الدخول برسالة نصية</string>
+    <string name="Reset_Password">استعادة كلمة المرور</string>
+    <string name="Create_New_Password">إنشاء كلمة مرور</string>
+    <string name="New_Password">كلمة المرور الجديدة </string>
+    <string name="Confirm_Password">تأكيد كلمة المرور</string>
+    <string name="reset_my_password">إعادة تعيين كلمة المرور</string>
+    <string name="login_via_mobile">تسجيل الدخول برقم الهاتف</string>
+    <string name="reset_password">استعادة كلمة المرور</string>
+    <string name="don_t_have_an_account">ليس لدي حساب</string>
+    <string name="register_for_free_now">سجل الآن مجانا</string>
+    <string name="skip_login"><u>تخطي التسجيل</u></string>
+    <string name="otp_sub_heading">برجاء كتابة رقم الجوال للحصول على الكود </string>
+    <string name="mobile_number">رقم الجوال</string>
+    <string name="generate_otp">الحصول على الرسالة النصية</string>
+    <string name="otp_number_heading">أدخل الكود المكون من 4 أرقام المرسلة إلى جوالك المنتهي **** 231</string>
+    <string name="otp">الكود السري</string>
+    <string name="sign_up">تسجيل جديد</string>
+    <string name="signup_heading">رجاء كتابة البيانات أدناه لانشاء حسابكم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="i_agree_to_the_terms_amp_conditions">أنا أوافق على الشروط والاحكام</string>
+    <string name="verify_mobile_number">التحقق من رقم الجوال</string>
+    <string name="verify_via_otp">التحقق بواسطة رسالة نصية</string>
+    <string name="continue_text">استمر</string>
+    <string name="evaluation_id">رقم المقيم :</string>
+    <!-- BUYER AND SELLER DASHBOARD -->
+    <string name="open">فتح</string>
+    <string name="close">قريب</string>
+    <string name="new1">جديد</string>
+    <string name="used">مستخدم</string>
+    <string name="auction">المزاد</string>
+    <string name="auctions">المزادات</string>
+    <string name="cart">عربة التسوق</string>
+    <string name="sell">بيع</string>
+    <string name="categories">الأقسام</string>
+    <string name="home">الرئيسية</string>
+    <string name="settings">الاعدادات</string>
+    <string name="app_version">اصدار التطبيق</string>
+    <string name="al_gergawi">Al Gergawi</string>
+    <string name="country">البلد</string>
+    <string name="terms_conditions"><u>الشروط و الأحكام</u></string>
+    <string name="terms_conditions_apply">الشروط و الأحكام</string>
+    <string name="help_support">الدعم و المساعدة></string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="sell_my_device">بيع جهازي</string>
+    <string name="see_my_offers">مشاهدة عروضي</string>
+    <string name="track_devices">تعقب الأجهزة للتقييم</string>
+    <string name="evaluation_notifications">اشعارات للتقييم</string>
+    <string name="my_messages">رسائلي</string>
+    <string name="my_buying_orders">طلبات الشراء</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="about_us">عن اي مول</string>
+    <string name="track_sold_devices">تعقب اجهزتي المباعة</string>
+    <string name="auction_sellers">بائعين المزاد</string>
+    <string name="resolution_center">مركز التقييم</string>
+    <string name="auction_payments">دفعات المزاد</string>
+    <string name="top_offers">أقوى العروض</string>
+    <string name="view_all">تصفح الكل</string>
+
+    <!-- CATEGORIES-->
+    <string name="mobile_phones">جوالات</string>
+    <string name="laptops">لابتوب</string>
+    <string name="headphones">سماعات</string>
+    <string name="smartwatches">ساعات ذكية</string>
+    <string name="game_console">أجهزة الالعاب</string>
+    <string name="camera">كاميرات</string>
+    <string name="promotions">العروض</string>
+    <string name="new_arrivals">وصل حديثا</string>
+    <string name="seller_deals">عروض البائعين</string>
+    <string name="iphones">أيفون</string>
+    <string name="android_phones">جوالات اندرويد</string>
+    <string name="premium_phones">جوالات مميزة</string>
+    <string name="top_camera_pics">كاميرات مميزة</string>
+    <string name="editor_choice">اختيار الفنين</string>
+    <string name="large_screen">شاشة كبيرة</string>
+    <string name="small_screen">شاشة صغيرة</string>
+
+    <!-- SELL YOUR DEVICE -->
+    <string name="device_heading">رجاء اختيار فئة جهازك</string>
+    <string name="sell_your_device">بيع جهازي</string>
+    <string name="tablet">تابلت</string>
+    <string name="next">التالي</string>
+    <string name="sell_your_mobile">بيع جوالي</string>
+    <string name="serial_number">الرقم التسلسلي</string>
+    <string name="enter_serial_number_here">أدخل الرقم التسلسلي هنا</string>
+    <string name="add">أضف</string>
+    <string name="how_to_get_serial_number">كيفية الحصول على الرقم التسلسلي</string>
+    <string name="click_here">انقر هنا</string>
+    <string name="upload_images">اضافة الصور</string>
+    <string name="functional_detail_1">كسر في الشاشة / اللمس او الشاشة بها مشاكل</string>
+    <string name="functional_detail_2">Front or Back Cameras not working or fault</string>
+    <string name="functional_detail_3">volume button defect</string>
+    <string name="functional_detail_4">Wifi or GPs not working</string>
+    <string name="functional_detail_5">Speakers not working</string>
+    <string name="functional_detail_6">Power/Home button faulty, Hard or not working</string>
+    <string name="functional_detail_7">Charging defect, unable to charge phone</string>
+    <string name="functional_detail_8">Microphone not working</string>
+    <string name="functional_detail_9">Battery faulty or very low battery backup</string>
+    <string name="physical_and_functional_details">الملاحظات التشغيلية والملموسة</string>
+    <string name="individual_bill_of_loading">فاتورة تحميل فردية</string>
+    <string name="print">طباعة</string>
+    <string name="download">تحميل</string>
+
+    <!-- PRODUCT SELLER -->
+    <string name="product_seller_page_heading">صفحة البائع - Manthul</string>
+    <string name="_181_days">181 يومًا</string>
+    <string name="active_since">فعال منذ -</string>
+    <string name="rating_text">التقييم العام (500+ تقييم)</string>
+    <string name="select_filter">اختر الفلتر</string>
+    <string name="select_category">اختيار الفئة</string>
+    <string name="select_brand">اختيار الماركة</string>
+    <string name="select_model">اختيار الموديل</string>
+    <string name="select_status">اختر الحالة</string>
+    <string name="latest_products_for_sale">أحدث المنتجات للبيع</string>
+    <string name="colors">الالوان</string>
+    <string name="color_text">اللون</string>
+    <string name="description">الوصف</string>
+    <string name="item_detail">تفاصيل القطعة</string>
+    <string name="specifications">المميزات</string>
+    <string name="shipping_and_return">الشحن والإرجاع</string>
+    <string name="reviews">تقييمات</string>
+    <string name="similar_products">منتجات مشابهة</string>
+    <string name="add_to_cart">اضافة لسلة التسوق</string>
+
+    <!--  AUCTION -->
+    <string name="date_time_heading">اختيار التاريخ والوقت للمزاد</string>
+    <string name="time_left">الوقت المتبقي:</string>
+    <string name="highest_bid">أعلى سوم:</string>
+    <string name="auction_id">رقم المزاد:</string>
+    <string name="place_your_bid">ادخل حد السوم</string>
+    <string name="summary">الخلاصة</string>
+    <string name="submit_for_evaluation">طلب التقييم</string>
+    <string name="submit_for_auction">طلب المزاد</string>
+    <string name="brand">الماركة</string>
+    <string name="model">موديل</string>
+    <string name="details">التفاصيل</string>
+    <string name="additional">إضافي</string>
+    <string name="pickup_address">عنوان استلام الشحنة</string>
+    <string name="mobile_no">رقم الجوال</string>
+    <string name="submitting_for_online_auction">طلب مزاد اونلاين</string>
+    <string name="summar_detail_sub_heading">بعد دفع مبلغ 100 ريال,سيتم سؤالكم للانتظار حتى ينتهي المزاد</string>
+    <string name="please_note">ملاحظة:</string>
+    <string name="summary_sub_heading_2">في حال قررت عدم بيع جهازك أو رفضت شحن الجهاز خلال 48 ساعة</string>
+    <string name="you_will_forfeti_the_100_sar_payment">سوف تفقد مبلغ 100 ريال</string>
+
+    <!-- CART -->
+    <string name="macbook_pro_16">Macbook Pro 16\"</string>
+    <string name="promo_code">كوبون خصم</string>
+    <string name="apply">تطبيق</string>
+    <string name="sub_total">إلاجمالي</string>
+    <string name="shipping_fee">رسوم الشحن</string>
+    <string name="estimating_tax">الضرائب التقديرية</string>
+    <string name="total">مجموع</string>
+    <string name="checkout">الدفع</string>
+
+    <!-- CHECKOUT -->
+    <string name="address">العنوان</string>
+    <string-array name="stepLabels">
+        <item>البيانات الشخصية</item>
+        <item>الدفع</item>
+        <item>تأكيد</item>
+    </string-array>
+    <string name="login_to_use_your_saved_addresses">سجل الدخول لاختيار عنوانيك المسجلة</string>
+    <string name="no_saved_addresses">لاتوجد عناوين</string>
+    <string name="add_new_address_to_continue">أضف عنوان جديد لاستمرار</string>
+    <string name="add_via_location">الاضافة باستخدام الموقع</string>
+    <string name="manually_enter_address">ادخال عنوان الشحن يدوياً</string>
+    <string name="add_new_address">إضافة عنوان جديد</string>
+    <string name="full_name">الاسم كاملاً</string>
+    <string name="phone_number">رقم الجوال</string>
+    <string name="city_district">المدينة / الحي</string>
+    <string name="zip">الرمز البريدي</string>
+    <string name="address1">Address*</string>
+    <string name="house_apartment">منزل/شقة</string>
+    <string name="agency_company">وكالة / شركة</string>
+    <string name="complete_your_address">استكمل عنوان الشحن</string>
+    <string name="le_grand_chateau_jumeirah_village_cir">Le Grand Chateau Jumeirah Village Cir…</string>
+    <string name="change">تغيير</string>
+    <string name="building_no">رقم المبني. *</string>
+    <string name="flat_no">رقم الشقة *</string>
+    <string name="e_g_b1_b2">على سبيل المثال B1 ، B2</string>
+    <string name="e_g_234">على سبيل المثال 234</string>
+    <string name="tag_location">علم الموقع:</string>
+    <string name="office">مكتب. مقر. مركز</string>
+    <string name="hotel">HOTEL</string>
+    <string name="other">الفندق</string>
+    <string name="confirm_location">قم بتأكيد الموقع</string>
+    <string name="new_address">عنوان جديد</string>
+    <string name="payment_methods">طرق الدفع</string>
+    <string name="cash">نقدي</string>
+    <string name="credit_card">بطاقة ائتمان</string>
+    <string name="saved_cards">البطاقات المحفوظة</string>
+    <string name="new_cards">بطاقات جديدة</string>
+    <string name="card_no">بطاقة رقم</string>
+    <string name="exp_date">تاريخ الانتهاء</string>
+    <string name="shipping_address">عنوان الشحن</string>
+    <string name="temp_address">3012 Broaddus Avenue Saint Joseph, California 4908</string>
+    <string name="place_order">تحريك الطلبية</string>
+    <string name="order_place_heading"> !تم تقديم الطلب بنجاح</string>
+    <string name="thank_you">شكرا لك</string>
+    <string name="order_details">اكتمل طلبك رقم 345678. يرجى التحقق من حالة التسليم في صفحات تتبع الطلب.</string>
+    <string name="enjoy_text"><u>هل تستمتع بتطبيقنا؟ قيمنا!</u></string>
+    <string name="continue_shopping">مواصلة التسوق</string>
+    <string name="review_heading">أضف رأيك</string>
+    <string name="your_name">اسمك</string>
+    <string name="Continue">استمر</string>
+    <string name="write_your_review">اكتب مراجعتك</string>
+    <string name="minimum_characters_250">الحد الأدنى لعدد الأحرف: 250</string>
+    <string name="submit">ارسال</string>
+    <string name="dd_mm_yy_hh_m_s">DD-MM-YY HH:M:s</string>
+    <string name="select_serial_image">Select Serial Image</string>
+    <string name="choose_file">Choose File</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="tag">
+        <![CDATA[
+            <font color="#00000">%1$s</font> -
+            <font color="#D3D3D3">%2$s</font>
+        ]]>
+    </string>
+    <string name="device_pictures">Device Pictures</string>
+    <string name="serial_number_image">Serial Number Image</string>
+    <string name="evaluation_amount_heading">Evaluation Amount?</string>
+    <string name="request_for_evaluate">Request for Evaluate</string>
+    <string name="write_here">Write here…</string>
+
+
+    <string name="title_activity_welcome_screen">WelcomeScreen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="bestquality">أفضل جودة</string>
+    <string name="oneyear">سنة واحدة</string>
+    <string name="feedback">الاراء</string>
+    <string name="payment">الدفع</string>
+    <string name="latestproduct">المنتجات الاخيرة</string>
+
+    <string name="fromdollor40">من $40</string>
+    <string name="Brand">الماركات</string>
+    <string name="freeforreturn">للإسترجاع المجاني</string>
+    <string name="realdata">99%بيانات حقيقية</string>
+    <string name="secure">الامان</string>
+    <string name="newfeatures">ميزات جديدة</string>
+    <string name="title_activity_fill_new_password">FillNewPasswordActivity</string>
+    <string name="shopping_cart">سلة التسوق</string>
+    <string name="proceed_to_shipping_address">متابعة لعنوان الشحن</string>
+    <string name="please_select_a_shipping_address">رجاء اختيار عنوان الشحن</string>
+    <string name="street_name">عنوان</string>
+    <string name="add_and_edit">إضافة / تعديل</string>
+    <string name="discount_code_plus">رمز الخصم +</string>
+    <string name="add_gift_box">إضافة صندوق الهدية</string>
+    <string name="apply_coupon_code">تطبيق رمز القسيمة</string>
+    <string name="continue_to_payment">متابعة لصفحة الدفع</string>
+    <string name="discount_code_minus">رمز الخصم -</string>
+    <string name="enter_coupon_code">ادخل رمز القسيمة</string>
+    <string name="no_item_in_cart">لايوجد لديك منتجات في حقيبة التسوق الخاصة بك !</string>
+    <string name="shipping_address_title">عناوين الشحن</string>
+    <string name="id">المقيمون:</string>
+    <string name="passport">Passport</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="required_for_custom_clearance">(required for custom clearance)</string>
+    <string name="search_here">ابحث هنا…</string>
+    <string name="product_added_to_cart">تم إضافة المنتج لحقيبة تسوقك</string>
+    <string name="coupon_code_applied_successfully">تم تطبيق رمز القسيمة بنجاح</string>
+    <string name="coupon_code_removed_successfully">تمت إزالة رمز القسيمة بنجاح</string>
+    <string name="stc_pay">STC PAY</string>
+    <string name="cod">الدفع عند التسليم</string>
+    <string name="grand_total">إجمالي الطلب</string>
+    <string name="delete_item_confirmation_message">هل أنت متأكد من إلغاء هذا العنصر من سلة التسوق الخاصة بك؟</string>
+    <string name="item_deleted_successfully">تم حذف العنصر بنجاح</string>
+    <string name="please_enter_coupon_code">من فضلك ادخل كود الخصم </string>
+    <string name="coupon_code_already_applied">تم تطبيق رمز القسيمة بالفعل.</string>
+    <string name="please_login_to_application">Please login to the application</string>
+    <string name="google_play_services_not_available">Google Play service not available</string>
+    <string name="delivery_option_not_available">نأسف ! ليس لدينا خيار للتسليم لهذا الموقع.</string>
+    <string name="country_star">البلد</string>
+    <string name="address_star">العنوان</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="no_item_in_wishlist">ليس لديك أي عناصر في قائمة أمنياتك</string>
+    <string name="product_added_to_wishlist">تم اضافة المنتج إلى قائمة الأمنيات..</string>
+    <string name="product_removed_from_wishlist">تمت إزالة المنتج من قائمة الأمنيات</string>
+    <string name="address_added_successfully">تم إضافة العنوان بنجاح</string>
+    <string name="address_updated_successfully">تم تحديث العنوان بنجاح</string>
+    <string name="delete_item_confirmation_message_from_wishlist">هل أنت متأكد من حذف هذا العنصر من قائمة الأمنيات الخاصة بك؟</string>
+    <string name="change_country">تغيير البلد</string>
+    <string name="addresses">عناوين</string>
+    <string name="country_changed_successfully">تم تغيير البلد بنجاح</string>
+    <string name="must_be_logged_in">يجب تسجيل الدخول أولا</string>
+    <string name="please_select_payment_method">برجاء اختيار طريقة الدفع للاستمرار</string>
+    <string name="delete_address_confirmation_message">هل أنت متأكد أنك تريد حذف هذا العنوان؟</string>
+    <string name="search">بحث</string>
+    <string name="no_product_found">لا يوجد سجلات.</string>
+    <string name="invalid_coupon_code">رمز القسيمة غير صالح. تحقق من الرمز وحاول مرة أخرى.</string>
+    <string name="out_of_stock">نفذ من المخزون</string>
+    <string name="free_delivery">توصيل مجاني</string>
+    <string name="dont_receive_otp">otpلم يصلك ؟</string>
+    <string name="login_via_email">تسجيل الدخول بالبريد الالكتروني</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="login_success">Login Success</string>
+    <string name="mobile">جوال</string>
+    <string name="enter_mobile_number">Please Fill Mobile Number First</string>
+    <string name="enter_username">الرجاء إدخال اسم المستخدم</string>
+    <string name="enter_password">كلمة المرور</string>
+    <string name="enter_email">رجاء ادخال بريد الكتروني فعال</string>
+    <string name="enter_mobile">ادخل رقم الجوال</string>
+    <string name="sign_up_successfully">تم تسجيل الدخول بنجاح</string>
+    <string name="logout_message">هل تريد تسجيل الخروج ؟</string>
+    <string name="cancel">الغاء</string>
+    <string name="select_any_category">رجاء اختر الفئة</string>
+    <string name="select_variant">المواصفات</string>
+    <string name="choose_picture">Choose Your Picture</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="my_orders">طلباتي</string>
+
+    <string name="reorder">اعادة الطلب</string>
+    <string name="size"> المقاس :</string>
+    <string name="color">اللون :</string>
+    <string name="qty">الكمية :</string>
+    <string name="order_id">بطاقة هوية للطلب :</string>
+    <string name="cancel_order_confirmation_message">هل أنت متأكد من الغاء الطلب</string>
+    <string name="order_cancelled_message">تم إلغاء الطلب بنجاح</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="english_or_arabic">الإنجليزية أو العربية</string>
+    <string name="current_selection">الإختيار الحالي -</string>
+    <string name="contact_shipping_return_faq">اتصل بنا ، الشحن ، الاسترجاع، الأسئلة الشائعة …</string>
+    <string name="emall">Emall</string>
+    <string name="learn_more_about_us">اعرف المزيد عنا</string>
+    <string name="follow_us_on">تابعونا على</string>
+    <string name="my_payments">مدفوعاتي</string>
+    <string name="contact_us">إتصل بنا</string>
+    <string name="shipping_and_delivery_policy">سياسة الشحن والتوصيل</string>
+    <string name="exchange_and_return_policy">سياسة الاستبدال والاسترجاع</string>
+    <string name="faq">الاسئلة الشائعة</string>
+    <string name="language_changed_successfully">تم تغييراللغة بنجاح</string>
+    <string name="whatsapp">واتس اب</string>
+    <string name="call">مكالمة</string>
+    <string name="name">اسم</string>
+    <string name="message">رسالة</string>
+    <string name="send">إرسال</string>
+    <string name="whatsapp_not_installed">آسف ، لم يتم تثبيت واتس اب</string>
+    <string name="hello_emall_team">مرحبا فريق اي مول</string>
+    <string name="call_permission">إذن مطلوب لإجراء مكالمة</string>
+
+    <string name="calling_number">+966–558645199</string>
+    <string name="enter_name">اكتب اسمك الاول</string>
+    <string name="edit">تعديل</string>
+    <string name="name_must_start_with_alphabet">يجب أن يبدأ الاسم بحرف</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الاسم الاخير</string>
+    <string name="news_letter_subscription">الاشتراك بالنشرة الاخبارية</string>
+    <string name="update_profile">تحديث الملف الشخصي</string>
+    <string name="please_enter_new_password">الرجاء إدخال كلمة مرور جديدة</string>
+    <string name="please_enter_confirm_password">الرجاء إدخال تأكيد كلمة المرور</string>
+    <string name="change_password">غير كلمة السر</string>
+    <string name="my_profile_details">حسابي / التفاصيل</string>
+    <string name="enter_first_name">يرجى ادخال الاسم الاول</string>
+    <string name="profile_updated_successfully">تم تحديث الملف الشخصي بنجاح</string>
+    <string name="password_does_not_match">كلمة المرور غير مطابقة</string>
+    <string name="delete">حذف</string>
+    <string name="filters">تصنيفات</string>
+    <string name="password_length_error">كلمة المرور لابد ألا تقل عن 8 أحرف</string>
+    <string name="mobile_number_verification">تعريف رقم الجوال</string>
+    <string name="mobile_number_verification_message">تم ارسال رسالة نصية لكم بالكود السري مكون من 4 ارقام</string>
+    <string name="please_type_the_verification_code">رجاء كتابة رمز التحقق</string>
+    <string name="resend_code_after_text">إعادة ارسال الكود بعد30 ثانية</string>
+    <string name="verify_the_code">تحقق من الرمز</string>
+    <string name="resend_the_code">اعادة ارسال الرمز</string>
+    <string name="send_failed_retry">فشل الارسال -اعادة المحاولة</string>
+    <string name="code_sent_successfully">تم ارسال الكود بنجاح</string>
+    <string name="enter_otp">Please enter OTP.</string>
+    <string name="no_order_in_my_orders">لا يوجد طلبات في طلباتي" لك </string>
+    <string name="iphone_11_6_1_inch_white_color_128_gb">iPhone 11– 6.1 inch - white color 128 GB</string>
+    <string name="sar_490">SAR 490</string>
+
+    <string name="Yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="evaluation"> المقيمين</string>
+
+    <string name="please_enter_your_name">اكتب اسمك الاول</string>
+    <string name="please_enter_email">من فضلك ادخل البريد الالكتدوني </string>
+    <string name="please_enter_valid_email">الرجاء إدخال بريد إلكتروني صحيح</string>
+    <string name="please_enter_mobile_number">الرجاء ادخال رقم الهاتف</string>
+
+    <string name="personalize_msg">ابحث عن خيارات مخصصة لاحتياجات عملك من المنزل</string>
+    <string name="flash_sale">بيع مفاجئ</string>
+    <string name="best_deals">افضل العروض</string>
+    <string name="hot_sale">العروض</string>
+    <string name="popular_search">الاكثر بحثاً</string>
+    <string name="deal_of_the_month">صفقة الشهر</string>
+    <string name="shop_now">تسوق الآن</string>
+    <string name="sign_in_your_account">تسجيل الدخول الي حسابك</string>
+    <string name="year_of_model">سنة الصنع</string>
+    <string name="total_reviews">248 تقييم</string>
+    <string name="out_of_5.0">4.1 من 5</string>
+    <string name="top_10_selected_product_of_the_week">أفضل 10 منتجات مختارة لهذا الأسبوع</string>
+    <string name="sell_a_new_device">بيع جهاز جديد</string>
+    <string name="your_devices">أجهزتك</string>
+    <string name="login_register">تسجيل الدخول / اشتراك</string>
+    <string name="view_biddings">مشاهدة المزايدات</string>
+    <string name="auction_timing">توقيت المزاد</string>
+    <string name="auction_status">حالة المزاد</string>
+    <string name="please_wait">رجاء الإنتظار</string>
+    <string name="filter">تصنيف</string>
+
+    <string name="days">أيام</string>
+    <string name="hours">ساعات</string>
+    <string name="mins">دقائق</string>
+    <string name="sec">ثواني</string>
+
+    <string name="terms_conditions_without_underline">الشروط و الأحكام</string>
+
+    <string name="view_offer">فتح العروض</string>
+    <string name="view">عرض</string>
+    <string name="password_is_too_short">كلمة المرور قصيرة جدا</string>
+
+
+    <string name="submitted_for">مرسلة لـ:</string>
+    <string name="created">تم انشاؤها:</string>
+    <string name="evaluation_status">حالة التقييم:</string>
+    <string name="evaluation_timing">وقت التقييم:</string>
+    <string name="processing">جاري المعالجة</string>
+    <string name="no_issue_found">لم يتم العثور علي مشكلة</string>
+    <string name="sort_by">ترتيب حسب</string>
+    <string name="_default">الافتراضي</string>
+    <string name="recently_arrived">Recently Arrived</string>
+    <string name="price_low_to_high">السعر من الأقل للأعلي</string>
+    <string name="price_high_to_low">السعر من الأعلي للأقل</string>
+
+
+
+
+</resources>

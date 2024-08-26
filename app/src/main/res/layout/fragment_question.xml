@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/title_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="@string/physical_and_functional_details"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_18dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_heading" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="Question"
+        android:textColor="@color/selected_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="1/5"
+        android:textColor="@color/selected_color"
+        app:layout_constraintStart_toEndOf="@id/question"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:fontFamily="@font/mulish_bold"
+        android:maxLength="200"
+        android:text="are you sure ?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/true_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:layout_marginEnd="@dimen/margin_18dp"
+        android:fontFamily="@font/mulish_regular"
+        android:text="Yes"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/false_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_18dp"
+        android:fontFamily="@font/mulish_regular"
+        android:text="No"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/true_button" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:background="@color/white"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:gravity="top|start"
+        android:overScrollMode="always"
+        android:padding="@dimen/margin_12dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/unselected_btn_color"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginEnd="@dimen/margin_18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/radio_btn_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_18dp"
+        android:layout_marginEnd="@dimen/margin_18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_title" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/drop_down_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_title" />
+
+    <TextView
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:background="@drawable/ic_charcoal_black_gradient_btn_color"
+        android:fontFamily="@font/mulish_regular"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

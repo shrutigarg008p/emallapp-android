@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp">
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/bank_spinner"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/_3sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/mulish_regular"
+        android:hint="Select Bank"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        />
+
+    <EditText
+        android:id="@+id/mobile_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/mulish_regular"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLength="10"
+        android:insetBottom="4dp"
+        android:insetTop="4dp"
+        android:padding="@dimen/_10sdp"
+        android:hint="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/bank_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/or_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mobile_edit_text"
+            android:text="OR"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal"
+            android:typeface="monospace"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mulish_bold"/>
+
+    <EditText
+        android:id="@+id/iban_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/mulish_regular"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:maxLength="10"
+        android:insetBottom="4dp"
+        android:insetTop="4dp"
+        android:padding="@dimen/_10sdp"
+        android:hint="IBAN"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/or_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/or_text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iban_edit_text"
+        android:text="OR"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="normal"
+        android:typeface="monospace"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mulish_bold"/>
+
+    <EditText
+        android:id="@+id/stc_pay_wallet_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/mulish_regular"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:maxLength="10"
+        android:insetBottom="4dp"
+        android:insetTop="4dp"
+        android:padding="@dimen/_10sdp"
+        android:hint="STC Pay Wallet Number"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/or_text_view_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_orange_gradient"
+        android:fontFamily="@font/mulish_bold"
+        android:text="Add"
+        android:textSize="@dimen/_16sdp"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:insetBottom="4dp"
+        android:insetTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/stc_pay_wallet_number"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="normal"/>
+
+    <include
+        layout="@layout/progress_bar_with_text_view"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

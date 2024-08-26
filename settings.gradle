@@ -1,0 +1,3 @@
+include ':sdp'
+include ':app'
+rootProject.name = "Emall"
