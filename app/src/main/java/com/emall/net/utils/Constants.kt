@@ -38,8 +38,8 @@ object Constants {
     internal const val PASSWORD = "password"
     internal const val QUESTION_LIST = "questionList"
     internal const val STORAGE_PERMISSION = 112
-    internal const val TAP_PAYMENT_SECRET_STAGING_KEY = "sk_test_0vpqyXdxl7LhGzWbZ6kracmi"
-    internal const val TAP_PAYMENT_SECRET_PRODUCTION_KEY = "sk_live_ba9NRLHB10QUhJdjAfZXDFws"
+    internal const val TAP_PAYMENT_SECRET_STAGING_KEY = ""
+    internal const val TAP_PAYMENT_SECRET_PRODUCTION_KEY = ""
     internal const val BOOLEAN_QUESTION = "boolean";
     internal const val CHECKBOX_QUESTION = "checkbox";
     internal const val RADIO_BUTTON_QUESTION = "radio_buttons";
@@ -52,10 +52,10 @@ object Constants {
     internal const val ECOMMERCE_STAGING_URL = "http://staging.emall.net/"
     internal const val ECOMMERCE_PRODUCTION_URL = "https://emall.net/"
 
-    internal const val CONSUMER_KEY = "xj8j1ia5msfivjb31jgrvu7prlqg21cl"
-    internal const val CONSUMER_SECRET = "4iq5xj2i84n5kh7ovengbkprky4mkpos"
-    internal const val ACCESS_TOKEN = "uy58ygewue3g9tfwrcpkf02pxzr77abd"
-    internal const val ACCESS_TOKEN_SECRET = "u5x0lf5001w0xddf6uo8svkqloltzzwb"
+    internal const val CONSUMER_KEY = ""
+    internal const val CONSUMER_SECRET = ""
+    internal const val ACCESS_TOKEN = ""
+    internal const val ACCESS_TOKEN_SECRET = ""
     internal const val EDIT = "edit"
     internal const val DELETE = "delete"
     internal const val PICKUP = "pickup"
